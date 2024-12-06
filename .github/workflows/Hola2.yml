@@ -1,0 +1,14 @@
+name: Hola Mundo Workflow2
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Imprimir Hola Mundo
+      run: echo "Hola Mundo desde dispatch"
