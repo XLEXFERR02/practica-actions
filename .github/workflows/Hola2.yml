@@ -1,7 +1,8 @@
-name: Hola Mundo Workflow2
+name: Hola Mundo Workflow
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
     
 jobs:
   hola-mundo:
@@ -11,4 +12,4 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Imprimir Hola Mundo
-      run: echo "Hola Mundo desde dispatch"
+      run: echo "Hola Mundo desde mi MV"
